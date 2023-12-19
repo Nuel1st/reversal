@@ -1,0 +1,102 @@
+{% extends 'payments/main.html' %}
+
+{% load static %}
+
+
+
+<main>
+  {% block content %}
+  <video src="{% static 'videos/Charts.mp4' %}" class="video-bg" autoplay loop muted> </video>
+
+<!--   
+  <div class="container-login" id="container">
+    <div class="form-container sign-up">
+      <form>
+        <h1>Create Account</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+          
+          <a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <span>or use your emial for registration</span>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button>Sign Up</button>
+      </form>
+    </div>
+
+    <div class="form-container sign-in">
+      <form>
+        <h1>Sign In</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+  
+          <a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <span>or use your email password</span>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <a href="">Forgot Your Password?</a>
+        <button>Sign In</button>
+      </form>
+    </div>
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-left">
+          <h1>Welcome Back</h1>
+          <p>Enter your details</p>
+          <button class="hidden" id="login"> Sign In</button>
+        </div>
+        <div class="toggle-panel toggle-right">
+          <h1>Hello, Rex!<h1>
+          <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Register here!</p>
+          <button class="hidden" id="register"> Sign Up </button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <!-- <video src="videos/background1.mp4.mp4" autoplay loop muted></video> -->
+  <div class="wrapper">
+      <form action="submit">
+          <h1>Login</h1>
+
+          <div class="input-box">
+              <input type="text"
+              placeholder="Username">
+              <i class="bx bx-user"></i>
+          </div>
+
+          <div class="input-box">
+              <input type="password"
+              placeholder="Password">
+              <i class='bx bxs-lock-alt' ></i>
+          </div>
+          
+          <div class="remember-forget">
+          <label for="">
+              <input type="checkbox" name=""
+              id="">
+              Remember Me 
+          </label>
+          <a href="#">Forget Password</a>
+          </div>
+
+          <button type="submit" class="btn"> Login </button>
+          
+          <div class="register-link">
+              <p>Don't have an account? <a href="#"> Register </a></p>
+              
+          </div>
+
+      </form>
+  </div>
+
+  <!-- <script src="{% static 'js/script.js' %}"></script> -->
+
+  {% endblock content %}
+</main>
+
+
